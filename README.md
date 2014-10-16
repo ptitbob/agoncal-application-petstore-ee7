@@ -2,15 +2,11 @@
 
 * *Author* : [Antonio Goncalves](http://www.antoniogoncalves.org)
 * *Level* : Intermediate
-* *Technologies* : Java EE 7 (JPA 2.1, CDI 1.1, Bean Validation 1.1, EJB Lite 3.2, JSF 2.2, JAX-RS 2.0), Twitter Bootstrap (Bootstrap 2.3.1, JQuery 1.9.1)
-* *Application Servers* : GlassFish 4.x
+* *Technologies* : Java EE 7 (JPA 2.1, CDI 1.1, Bean Validation 1.1, EJB Lite 3.2, JSF 2.2, JAX-RS 2.0), Twitter Bootstrap (Bootstrap 3.x, JQuery 2.x)
+* *Application Servers* : GlassFish 4.x, WildFly 8
 * *Summary* : A Petstore-like application using Java EE 7
 
 [Download the code from GitHub](https://github.com/agoncal/agoncal-application-petstore-ee7)
-
-## Test this application on CloudBees
-
-<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/cyrille-leclerc/agoncal-application-petstore-ee7/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
 
 ## Purpose of this application
 
@@ -75,6 +71,11 @@ The admin [REST interface](rs/application.wadl) allows you to create/update/remo
 You can also get a JSON reprensetation as follow :
 
 * `curl -X GET -H "accept: application/json" http://localhost:8080/applicationPetstore/rs/catalog/items`
+
+## Test this application on CloudBees
+
+<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/cyrille-leclerc/agoncal-application-petstore-ee7/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
+
 
 ## Third Party Tools & Frameworks
 

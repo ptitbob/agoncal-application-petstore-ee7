@@ -1,6 +1,7 @@
 package org.agoncal.application.petstore.service;
 
-import org.agoncal.application.petstore.domain.Customer;
+import org.agoncal.application.petstore.model.Country;
+import org.agoncal.application.petstore.model.Customer;
 import org.agoncal.application.petstore.util.Loggable;
 
 import javax.ejb.Stateless;
@@ -83,4 +84,9 @@ public class CustomerService implements Serializable {
     public void removeCustomer(@NotNull Customer customer) {
         em.remove(em.merge(customer));
     }
+
+    public Country findCountry(@NotNull Long countryId) {
+        return em.find(Country.class, countryId);
+    }
+
 }

@@ -1,8 +1,8 @@
 package org.agoncal.application.petstore.service;
 
-import org.agoncal.application.petstore.domain.Category;
-import org.agoncal.application.petstore.domain.Item;
-import org.agoncal.application.petstore.domain.Product;
+import org.agoncal.application.petstore.model.Category;
+import org.agoncal.application.petstore.model.Item;
+import org.agoncal.application.petstore.model.Product;
 import org.agoncal.application.petstore.util.Loggable;
 
 import javax.ejb.Stateless;
@@ -74,9 +74,6 @@ public class CatalogService implements Serializable {
 
     public Product findProduct(@NotNull Long productId) {
         Product product = em.find(Product.class, productId);
-        if (product != null) {
-            product.getItems(); // TODO check lazy loading
-        }
         return product;
     }
 
